@@ -24,9 +24,9 @@ spec:
         ports:
         - containerPort: 9000
           protocol: TCP
-		env:
-		- name: REDIS_HOST
-		  value:localhost
+    env:
+    - name: REDIS_HOST
+      value:localhost
       - image: redis
         name: redis
       restartPolicy: Always
